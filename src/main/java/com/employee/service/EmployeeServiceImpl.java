@@ -18,11 +18,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	EmployeeDAO dao;
 	
 	@Override
-	public Employee saveEmployee(Employee employee) throws ParseException {
-		//String date = employee.getDob();
-		//SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-		//String dateStr = format.format(date);  
-		//employee.setDob(dateStr);
+	public Employee saveEmployee(Employee employee)  {
 		return dao.save(employee);
 	}
 
