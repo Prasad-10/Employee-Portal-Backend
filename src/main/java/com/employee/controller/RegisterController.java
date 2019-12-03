@@ -25,7 +25,7 @@ public class RegisterController {
 	EmployeeService service;
 	
 	@PostMapping("/register")
-	public Employee createEmployee(@Valid @RequestBody Employee employee) throws ParseException
+	public Employee createEmployee(@Valid @RequestBody Employee employee)
 	{
 		System.out.println("Entering register()");
 		return service.saveEmployee(employee);
